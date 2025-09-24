@@ -1,69 +1,62 @@
 @font-face {
-    font-family: "Tilda Sans";
-    src:
-        url("../materials/fonts/AnyConv.com__TildaSans-Light.woff2") format("woff2"),
-        url("../materials/fonts/TildaSans-Light.woff") format("woff");
+    font-family: 'Tilda Sans';
+    src: url('../materials/fonts/TildaSans-Black.woff2') format('woff2'),
+        url('../materials/fonts/TildaSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tilda Sans';
+    src: url('../materials/fonts/TildaSans-Light.woff2') format('woff2'),
+        url('../materials/fonts/TildaSans-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Tilda Sans";
-    src:
-        url("../materials/fonts/AnyConv.com__TildaSans-Regular.woff2") format("woff2"),
-        url("../materials/fonts/TildaSans-Regular.woff") format("woff");
-    font-weight: 400;
+    font-family: 'Tilda Sans';
+    src: url('../materials/fonts/TildaSans-Regular.woff2') format('woff2'),
+        url('../materials/fonts/TildaSans-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Tilda Sans";
-    src:
-        url("../materials/fonts/AnyConv.com__TildaSans-Medium.woff2") format("woff2"),
-        url("../materials/fonts/TildaSans-Medium.woff") format("woff");
+    font-family: 'Tilda Sans';
+    src: url('../materials/fonts/TildaSans-Medium.woff2') format('woff2'),
+        url('../materials/fonts/TildaSans-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Tilda Sans";
-    src:
-        url("../materials/fonts/AnyConv.com__TildaSans-Semibold.woff2") format("woff2"),
-        url("../materials/fonts/TildaSans-Semibold.woff") format("woff");
+    font-family: 'Tilda Sans';
+    src: url('../materials/fonts/TildaSans-Bold.woff2') format('woff2'),
+        url('../materials/fonts/TildaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tilda Sans';
+    src: url('../materials/fonts/TildaSans-Semibold.woff2') format('woff2'),
+        url('../materials/fonts/TildaSans-Semibold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Tilda Sans";
-    src:
-        url("../materials/fonts/AnyConv.com__TildaSans-Bold.woff2") format("woff2"),
-        url("../materials/fonts/TildaSans-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Tilda Sans";
-    src:
-        url("../materials/fonts/AnyConv.com__TildaSans-ExtraBold.woff2") format("woff2"),
-        url("../materials/fonts/TildaSans-ExtraBold.woff") format("woff");
+    font-family: 'Tilda Sans Extra';
+    src: url('../materials/fonts/TildaSans-ExtraBold.woff2') format('woff2'),
+        url('../materials/fonts/TildaSans-ExtraBold.woff') format('woff');
     font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Tilda Sans";
-    src:
-        url("../materials/fonts/AnyConv.com__TildaSans-Black.woff2") format("woff2"),
-        url("../materials/fonts/TildaSans-Black.woff") format("woff");
-    font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
@@ -132,7 +125,7 @@ h1, h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(to bottom, #5DD9C8 600px, transparent 1px);
+    background: linear-gradient(#5DD9C8 550px, transparent 750px);
 }
 
 .autor__title {
@@ -150,7 +143,421 @@ h1, h2 {
 .autor__girl {
     border: 3px solid #5DD9C8;
     border-radius: 12px;
-    width: 35vw;
-    height: 75vh;
+    width: 25vw;
+    height: 60vh;
     object-fit: cover;
+}
+
+.skills__title {
+    text-align: center;
+    margin: 150px auto 50px;
+}
+
+.skills__container {
+    margin: 0 15%;
+    display: grid;
+    grid-template: 
+    "sites design soft-skills" 1fr
+    / 1fr 1fr 1fr;
+    border: 1px solid #5DD9C8;
+    border-radius: 12px;
+    width: 70vw;
+    height: 100vh;
+    justify-items: center;
+}
+
+/* все с 1 блоком */
+
+.skills__first-block::before{
+    content: url(../materials/icons/Development.svg);
+    display: block;
+}
+
+.skills__first-block {
+    grid-area: sites;
+    border: 1px solid #5DD9C8;
+    border-start-start-radius: 10px;
+    border-end-start-radius: 10px;
+    padding-top: 80px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.skills__first-block h3{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.skills__first-block h4{
+    color: #FF9235;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.skills__first-block p{
+    padding: 20px 0;
+}
+
+.skills__1b-technologies{
+    margin-top: 130px;
+}
+
+/* все со 2 блоком */
+
+.skills__sec-block::before{
+    content: url(../materials/icons/Design.svg);
+    display: block;
+}
+
+.skills__sec-block {
+    grid-area: design;
+    padding-top: 80px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid #5DD9C8
+}
+
+.skills__sec-block h3{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.skills__sec-block h4{
+    color: #FF9235;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.skills__sec-block p{
+    padding: 20px 0;
+}
+
+.skills__2b-technologies{
+    margin-top: 40px;
+}
+
+
+/* все с 3 блоком */
+
+.skills__third-block::before{
+    content: url(../materials/icons/SoftSkills.svg);
+    display: block;
+}
+
+.skills__third-block {
+    justify-self: stretch;
+    grid-area: soft-skills;
+    border-start-end-radius: 12px;
+    border-end-end-radius: 12px;
+    border: 1px solid #5DD9C8;
+    padding-top: 80px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.skills__3b-technologies{
+    margin-top: 190px;
+}
+
+.skills__third-block h3{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.skills__third-block h4{
+    color: #FF9235;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.skills__third-block p{
+    padding: 20px 0;
+}
+
+li{
+    margin-bottom: 15px;
+}
+
+.skills p{
+    padding: 0 2vw;
+    margin: 60px 0 10px 0;
+}
+
+.projects h2{
+    text-align: center;
+    margin: 160px 0 80px;
+}
+
+.projects__container{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    width: 65vw;
+    height: 45vh;
+    gap: 10px;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.projects__el {
+    border: 3px solid #8063A6;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+}
+
+.projects__btn{
+    color: #FF9235;
+    border-radius: 15px;
+    right: 7.5vw;
+    font-size: 25px;
+    font-weight: bold;
+    border: 2px solid #FF9235;
+    padding: 12px 35px;
+    background-color: #fff;
+    transform: translate(41.5vw, 8vh);
+}
+
+.order{
+    position: relative;
+    width: 100%;
+    height: 1200px;
+}
+
+.order__header{
+    margin-top: 160px;
+    text-align: center;
+    background-color: #5DD9C8;
+    width: 100%;
+    height: 28vh;
+}
+
+.order h2{
+    padding-top: 50px;
+}
+.order p{
+    font-size: 30px;
+    padding-top: 55px;
+}
+
+.order__left{
+    position: absolute;
+    top: 400px;
+    left: 70px;
+}
+
+.order__right{
+    font-weight: 500;
+    margin-top: 120px;
+    display: grid;
+    align-items: start;
+    position: absolute;
+    width: 46vw;
+    height: 50vh;
+    right: 140px;
+    font-size: 20px;
+    grid-template:
+    "name email" 1fr
+    "task task" 2fr
+    "btn btn" 0.5fr
+    /1fr 1fr;
+    gap: 120px;
+}
+
+.order__name-group{
+    grid-area: name;
+}
+
+.order__name{
+    margin-top: 15px;
+    border: 1px solid #FF9235;
+    border-radius: 10px;
+    display: block;
+    justify-self: stretch;
+    height: 7vh;
+}
+
+.order__email-group{
+    grid-area: email;
+}
+
+.order__email{
+    margin-top: 15px;
+    border: 1px solid #FF9235;
+    border-radius: 10px;
+    display: block;
+    justify-self: stretch;
+    height: 7vh;
+}
+
+.order__task-group{
+    grid-area: task;
+    transform: translateY(-50px);
+}
+
+.order__task{
+    margin-top: 15px;
+    border: 1px solid #FF9235;
+    border-radius: 10px;
+    display: block;
+    justify-self: stretch;
+    height: 30vh;
+}
+
+.order__btn{
+    grid-area: btn;
+    color: #FF9235;
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: 700;
+    border: 2px solid #FF9235;
+    padding: 8px 30px;
+    background-color: #fff;
+    justify-self: end;
+    transform:translateY(-130px) ;
+}
+
+.order__name,
+.order__email, 
+.order__task {
+    font-size: 20px;
+    font-family: inherit;
+    padding: 12px 15px;
+    line-height: 1.5;
+}
+
+.reviews{
+    min-height: 80vh;
+    position: relative;
+}
+
+.reviews h2{
+    text-align: center;
+}
+
+.reviews h3{
+    font-size: 35px;
+    width: 28vw;
+    text-align: center;
+    transform: translateX(36vw);
+    padding-top: 70px;
+    line-height: 1.5;
+}
+
+.reviews__text{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:400px;
+    right:45%;
+    text-align: center;
+    margin: 5px;
+}
+
+.reviews__main-text{
+    font-size: 33px;
+    margin-bottom: 35px;
+}
+
+.reviews figcaption{
+    margin-bottom: 5px;
+}
+
+.reviews__img-l {
+    object-fit: contain;
+    width: 70px;
+    height: 40px;
+    border: 2px solid #FF9235;
+    border-radius: 20px;
+}
+
+.reviews__img-r {
+    object-fit: contain;
+    width: 70px;
+    height: 40px;
+    border: 2px solid #FF9235;
+    border-radius: 20px;
+}
+
+.reviews__arrows{
+    gap: 10px;
+    display: inline-flex;
+    transform: translate(45vw, 33vh);
+}
+
+.partnership{
+    background: linear-gradient(360deg, #5DD9C8 700px, transparent 700px);
+}
+
+.partnership__container{
+    background-color: #8063A6;
+    display: flex;
+    width: 70vw;
+    height: 20vh;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    border-radius: 12px;
+    margin-bottom: 60px;
+}
+
+.partnership__first-el,
+.partnership__second-el,
+.partnership__third-el {
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 380px;
+    color: #fff;
+    text-align: center;
+}
+
+.partnership__third-el{
+    background-color: #8063A6;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    padding: 15px 25px;
+    font-weight: 700;
+}
+
+.partnership__first-el{
+    font-size: 30px;
+    font-weight: bold;
+    white-space: pre-wrap;
+}
+
+.partnership__second-el{
+    line-height: 1.6;
+}
+
+.footer__final{
+    display: grid;
+    justify-items: center;
+    grid-template: 
+    "img" 1fr
+    "from" 3fr
+    /1fr;
+}
+
+.footer__wrapper{
+    grid-area: img;
+    margin-bottom: 50px;
+}
+
+.footer__1,
+.footer__2,.footer__3 {
+    border: 2px solid #000;
+    border-radius: 100px;
+    padding: 5px;
+    margin: 15px;
+}
+
+.partnership__from{
+    text-align: center;
+    white-space: pre-wrap;
+    grid-area: from;
+    line-height: 1.5;
 }
