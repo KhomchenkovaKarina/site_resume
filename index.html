@@ -12,26 +12,26 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="navbar__wrapper">
-                <div class="navbar__item">Главная</div>
-                <div class="navbar__item">Обо мне</div>
-                <div class="navbar__item">Навыки и стек</div>
-                <div class="navbar__item">Проекты</div>
-                <button class="navbar__connection">
+            <ul class="navbar__wrapper">
+                <li><a href="#intro" class="navbar__item">Главная</a></li>
+                <li><a href="#autor" class="navbar__item">Обо мне</a></li>
+                <li><a href="#skills" class="navbar__item">Навыки и стек</a></li>
+                <li><a href="#projects" class="navbar__item">Проекты</a></li>
+                <a href="#partnership" class="navbar__connection">
                     Связаться со мной
-                </button>
-            </div>
+                </a>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section class="intro">
+        <section id="intro" class="intro">
             <h1>Карина Хомченкова</h1>
             <p class="intro__desc">Создаю современные и адаптивные веб-интерфейсы, оживляю дизайн с помощью кода.</p>
             <img class="intro__image" src="materials/images/main.png" alt="desktop with a website inside">
         </section>
 
-        <section class="autor">
+        <section id="autor" class="autor">
             <h2 class="autor__title">ПРИВЕТ, Я ВЕБ-РАЗРАБОТЧИК</h2>
             <p class="autor__desc">И я начинающий специалист, активно развивающийся в области фронтенд-разработки.
                 В настоящее время углубленно изучаю современные технологии и применяю их на практике через создание
@@ -40,7 +40,7 @@
             <img class="autor__girl" src="materials/images/my_photo.jpg" alt="a beautiful girl">
         </section>
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <h2 class="skills__title">НАВЫКИ И СТЕК ТЕХНОЛОГИЙ</h2>
             <div class="skills__container">
                 <div class="skills__first-block">
@@ -92,7 +92,7 @@
             </div>
         </section>
 
-        <article class="projects">
+        <article id="projects" class="projects">
             <h2>ПРОЕКТЫ</h2>
             <div class="projects__container">
                 <div class="projects__el"></div>
@@ -102,10 +102,11 @@
                 <div class="projects__el"></div>
                 <div class="projects__el"></div>
             </div>
-            <button class="projects__btn" type="button">Посмотреть на Github</button>
+            <a target="_blank" href="https://github.com/KhomchenkovaKarina" class="projects__btn"
+                type="button">Посмотреть на Github</a>
         </article>
 
-        <section class="order">
+        <section id="order" class="order">
             <header class="order__header">
                 <h2>Хотите заказать сайт?</h2>
                 <p>Напишите мне, чтобы обсудить детали</p>
@@ -143,34 +144,52 @@
                 <img class="reviews__img-r" src="materials/icons/Arrow-R.svg" alt="an orange arrow right">
             </div>
         </section>
-
-        <footer class="partnership">
-            <div class="partnership__container">
-                <p class="partnership__first-el">Договоримся
-о сотрудничестве</p>
-                <p class="partnership__second-el">У вас есть идея проекта или предложение о работе? Напишите мне. Я
-                    открыта
-                    к разным вариантам
-                    сотрудничества.</p>
-                <button class="partnership__third-el" type="button">Связаться с разработчиком</button>
-            </div>
-            <div class="footer__final">
-                <div class="footer__wrapper">
-                    <img class="footer__1" src="materials/icons/TG.svg" alt="an icon of telegram">
-                    <img class="footer__2" src="materials/icons/Habr.svg" alt="an icon of habr">
-                    <img class="footer__3" src="materials/icons/Email.svg" alt="an icon of mail">
-                </div class="footer__wrapper">
-                <p class="partnership__from">Изображения и иконки:
-Изображение-1 от Storyset на Freepik.
-Изображение-2 от Storyset на Freepik. 
-Иконка "Html" от Frey Wazza на Flaticon.
-Иконка «Телеграм» от Freepik на Flaticon. 
-Иконка «Общение» от Ilham Fitrotul Hayat на Flaticon. 
-Иконка «Дизайн сайта» от Freepik на Flaticon.
-Иконка «Эл.адрес» от Those Icons на Flaticon.</p>
-            </div>
-        </footer>
     </main>
+
+    <aside class="partnership__container">
+        <p class="partnership__first-el">Договоримся
+о сотрудничестве</p>
+        <p class="partnership__second-el">У вас есть идея проекта или предложение о работе? Напишите мне. Я
+            открыта
+            к разным вариантам
+            сотрудничества.</p>
+        <a href="#order" class="partnership__third-el" type="button">Связаться с разработчиком</a>
+    </aside>
+
+    <footer id="partnership" class="partnership">
+        <div class="footer__final">
+            <div class="footer__wrapper">
+
+                <a class="footer_img" target="_blank" href="https://t.me/weftuh">
+                    <img class="footer__1" src="materials/icons/TG.svg" alt="an icon of telegram">
+                    <img class="footer__1 hover" src="materials/icons/TG-white.svg" alt="an icon of telegram">
+                </a>
+
+                <a class="footer_img" href="">
+                    <img class="footer__2" src="materials/icons/Habr.svg" alt="an icon of habr">
+                    <img class="footer__2 hover" src="materials/icons/Habr-white.svg" alt="an icon of habr">
+                </a>
+
+                <a class="footer_img" href="mailto:homcenkovakarina@gmail.com">
+                    <img class="footer__3" src="materials/icons/Email.svg" alt="an icon of mail">
+                    <img class="footer__3 hover" src="materials/icons/Email-white.svg" alt="an icon of mail">
+                </a>
+            </div class="footer__wrapper">
+
+            <div class="partnership__from">
+                <a href="https://ru.freepik.com/free-vector/
+                software-integration-conceptillustration_18352184.htm#page=2&query=вебразработка&position=7&from_view=search&track=sp h">
+                Изображение-1 от Storyset на Freepik.</a>
+                <a href="https://ru.freepik.com/free-vector/
+                code-typing-conceptillustration_10259340.htm#&position=12&from_vie w=author">Изображение-2 от Storyset на Freepik.</a>
+                <a href="https://www.flaticon.com/ru/free- icons/html" title="html иконки">Иконка "Html" от Frey Wazza на Flaticon.</a>
+                <a href="https://www.flaticon.com/ru/free- icons/" title="телеграмма иконки">Иконка «Телеграм» от Freepik на Flaticon.</a>
+                <a href="https://www.flaticon.com/ru/free- icons/" title="общение иконки">Иконка «Общение» от Ilham Fitrotul Hayat на Flaticon.</a>
+                <a href="https://www.flaticon.com/ru/free- icons/-" title="Дизайн сайта иконки">Иконка «Дизайн сайта» от Freepik на Flaticon.</a>
+                <a href="https://www.flaticon.com/ru/free- icons/-" title="Эл. адрес иконки">Иконка «Эл.адрес» от Those Icons на Flaticon.</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
