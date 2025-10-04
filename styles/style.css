@@ -1,71 +1,27 @@
-@font-face {
-    font-family: 'Tilda Sans';
-    src: url('../materials/fonts/TildaSans-Black.woff2') format('woff2'),
-        url('../materials/fonts/TildaSans-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Tilda Sans';
-    src: url('../materials/fonts/TildaSans-Light.woff2') format('woff2'),
-        url('../materials/fonts/TildaSans-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Tilda Sans';
-    src: url('../materials/fonts/TildaSans-Regular.woff2') format('woff2'),
-        url('../materials/fonts/TildaSans-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Tilda Sans';
-    src: url('../materials/fonts/TildaSans-Medium.woff2') format('woff2'),
-        url('../materials/fonts/TildaSans-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Tilda Sans';
-    src: url('../materials/fonts/TildaSans-Bold.woff2') format('woff2'),
-        url('../materials/fonts/TildaSans-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Tilda Sans';
-    src: url('../materials/fonts/TildaSans-Semibold.woff2') format('woff2'),
-        url('../materials/fonts/TildaSans-Semibold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Tilda Sans Extra';
-    src: url('../materials/fonts/TildaSans-ExtraBold.woff2') format('woff2'),
-        url('../materials/fonts/TildaSans-ExtraBold.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
 
 html {
     /* Задаем плавную прокрутку при нажатии на ссылку с id элемента.
      * Без этой настройки будет происходить мгновенное перемещение к этому элементу. */
     scroll-behavior: smooth;
 }
+
+.orange-button{
+    color: var(--orange);
+    border-radius: 15px;
+    font-size: 2.3vh;
+    line-height: 2.5vh;
+    font-weight: 600;
+    border: 2px solid var(--orange);
+    padding: 1.38vh 1.875vw;
+    background-color: #fff;
+}
+
+.orange-button:hover{
+    background-color: var(--orange);
+    color: #fff;
+    transition: .3s;
+}
+
 
 body {
     font-family: "Tilda Sans", sans-serif;
@@ -78,7 +34,8 @@ h1, h2 {
 }
 
 .navbar {
-    font-size: 25px;
+    font-size: 2.3vh;
+    line-height: 3.33vh;
     font-weight: 700;
 }
 
@@ -88,25 +45,12 @@ h1, h2 {
     height: 16vh;
     justify-content: center;
     align-items: center;
-    gap: 6vw;
+    gap: 5.98vw;
 }
 
 .navbar__connection {
-    color: #FF9235;
-    border-radius: 15px;
     right: 7.5vw;
-    font-size: inherit;
-    font-weight: inherit;
     position: absolute;
-    border: 2px solid #FF9235;
-    padding: 6px 22px;
-    background-color: #fff;
-}
-
-.navbar__connection:hover{
-    background-color: #FF9235;
-    color: #fff;
-    transition: .3s;
 }
 
 .intro {
@@ -137,7 +81,7 @@ h1, h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(#5DD9C8 550px, transparent 750px);
+    background: linear-gradient(var(--teal) 550px, transparent 750px);
 }
 
 .autor__title {
@@ -153,7 +97,7 @@ h1, h2 {
 }
 
 .autor__girl {
-    border: 3px solid #5DD9C8;
+    border: 3px solid var(--teal);
     border-radius: 12px;
     width: 25vw;
     height: 60vh;
@@ -171,7 +115,7 @@ h1, h2 {
     grid-template: 
     "sites design soft-skills" 1fr
     / 1fr 1fr 1fr;
-    border: 1px solid #5DD9C8;
+    border: 1px solid var(--teal);
     border-radius: 12px;
     width: 70vw;
     height: 114vh;
@@ -187,7 +131,7 @@ h1, h2 {
 
 .skills__first-block {
     grid-area: sites;
-    border: 1px solid #5DD9C8;
+    border: 1px solid var(--teal);
     border-start-start-radius: 10px;
     border-end-start-radius: 10px;
     padding-top: 80px;
@@ -202,7 +146,7 @@ h1, h2 {
 }
 
 .skills__first-block h4{
-    color: #FF9235;
+    color: var(--orange);
     font-weight: 600;
     padding: 20px 0;
 }
@@ -227,7 +171,7 @@ h1, h2 {
     padding-top: 80px;
     text-align: center;
     font-size: 30px;
-    border: 1px solid #5DD9C8
+    border: 1px solid var(--teal)
 }
 
 .skills__sec-block h3{
@@ -237,7 +181,7 @@ h1, h2 {
 }
 
 .skills__sec-block h4{
-    color: #FF9235;
+    color: var(--orange);
     font-weight: 600;
     padding: 20px 0;
 }
@@ -263,7 +207,7 @@ h1, h2 {
     grid-area: soft-skills;
     border-start-end-radius: 12px;
     border-end-end-radius: 12px;
-    border: 1px solid #5DD9C8;
+    border: 1px solid var(--teal);
     padding-top: 80px;
     text-align: center;
     font-size: 30px;
@@ -280,7 +224,7 @@ h1, h2 {
 }
 
 .skills__third-block h4{
-    color: #FF9235;
+    color: var(--orange);
     font-weight: 600;
     padding: 20px 0;
 }
@@ -322,21 +266,8 @@ li{
 }
 
 .projects__btn{
-    color: #FF9235;
-    border-radius: 15px;
-    font-size: 25px;
-    font-weight: bold;
-    border: 2px solid #FF9235;
-    padding: 12px 35px;
     display: inline-block;
-    background-color: #fff;
     transform: translate(41.5vw, 8vh);
-}
-
-.projects__btn:hover{
-    background-color: #FF9235;
-    color: #fff;
-    transition: .3s;
 }
 
 .order{
@@ -348,7 +279,7 @@ li{
 .order__header{
     margin-top: 160px;
     text-align: center;
-    background-color: #5DD9C8;
+    background-color: var(--teal);
     width: 100%;
     height: 28vh;
 }
@@ -391,7 +322,7 @@ li{
 
 .order__name{
     margin-top: 15px;
-    border: 1px solid #FF9235;
+    border: 1px solid var(--orange);
     border-radius: 10px;
     display: block;
     justify-self: stretch;
@@ -404,7 +335,7 @@ li{
 
 .order__email{
     margin-top: 15px;
-    border: 1px solid #FF9235;
+    border: 1px solid var(--orange);
     border-radius: 10px;
     display: block;
     justify-self: stretch;
@@ -418,7 +349,7 @@ li{
 
 .order__task{
     margin-top: 15px;
-    border: 1px solid #FF9235;
+    border: 1px solid var(--orange);
     border-radius: 10px;
     display: block;
     justify-self: stretch;
@@ -427,21 +358,8 @@ li{
 
 .order__btn{
     grid-area: btn;
-    color: #FF9235;
-    border-radius: 15px;
-    font-size: 25px;
-    font-weight: 700;
-    border: 2px solid #FF9235;
-    padding: 8px 30px;
-    background-color: #fff;
     justify-self: end;
     transform:translateY(-130px) ;
-}
-
-.order__btn:hover{
-    background-color: #FF9235;
-    color: #fff;
-    transition: .3s;
 }
 
 .order__name,
@@ -513,19 +431,19 @@ li{
     transform: translate(45vw, 33vh);
 }
 
-.partnership{
-    background: linear-gradient(360deg, #5DD9C8 700px, transparent 700px);
+.footer{
+    background: linear-gradient(360deg, var(--teal) 700px, transparent 700px);
     position: relative;
 }
 
-.partnership::before {
+.footer::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(360deg, #5DD9C8 600px, transparent 600px);
+    background: linear-gradient(360deg, var(--teal) 600px, transparent 600px);
     z-index: -1; /* Градиент ПОД контентом */
 }
 
@@ -592,8 +510,7 @@ li{
     transform: translateY(50px);
 }
 
-.footer__1,
-.footer__2,.footer__3 {
+.footer__el {
     border: 2px solid #000;
     border-radius: 100px;
     padding: 5px;
@@ -601,17 +518,16 @@ li{
 }
 
 .hover{
-    display: none;;;
+    display: none;
 }
 
-.footer__1:hover,
-.footer__2:hover,.footer__3:hover{
+.footer__el:hover{
     background-color: #8063a6;
     border: 2px solid #8063a6;
 }
 
 
-.partnership__from{
+.footer__from{
     text-align: center;
     white-space: pre-wrap;
     grid-area: from;
@@ -619,30 +535,30 @@ li{
     line-height: 1.5;
 }
 
-.footer_img {
+.footer__img {
     position: relative;
     display: inline-block;
 }
 
-.footer_img img {
+.footer__img img{
     transition: opacity 0.3s;
 }
 
-.footer_img img.hover {
+.footer__img img.hover {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
 }
 
-.footer_img:hover img:first-child {
+.footer__img:hover img:first-child {
     opacity: 0;
 }
 
-.footer_img:hover img.hover {
+.footer__img:hover img.hover {
     opacity: 1;
 }
 
-.footer__1, .footer__2, .footer__3 {
+.footer__el {
     display: block;
 }
