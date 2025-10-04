@@ -125,7 +125,7 @@ h1, h2 {
 /* все с 1 блоком */
 
 .skills__first-block::before{
-    content: url(../materials/icons/Development.svg);
+    content: url(../assets/icons/Development.svg);
     display: block;
 }
 
@@ -162,7 +162,7 @@ h1, h2 {
 /* все со 2 блоком */
 
 .skills__sec-block::before{
-    content: url(../materials/icons/Design.svg);
+    content: url(../assets/icons/Design.svg);
     display: block;
 }
 
@@ -198,7 +198,7 @@ h1, h2 {
 /* все с 3 блоком */
 
 .skills__third-block::before{
-    content: url(../materials/icons/SoftSkills.svg);
+    content: url(../assets/icons/SoftSkills.svg);
     display: block;
 }
 
