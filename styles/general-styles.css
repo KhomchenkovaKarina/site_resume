@@ -1,0 +1,39 @@
+html {
+    /* Задаем плавную прокрутку при нажатии на ссылку с id элемента.
+     * Без этой настройки будет происходить мгновенное перемещение к этому элементу. */
+    scroll-behavior: smooth;
+    scroll-margin-top: 12.4vh
+}
+
+body {
+    font-family: "Tilda Sans", sans-serif;
+}
+
+main {
+    margin-top: 19vh;
+}
+
+h1, h2 {
+    font-size: 5vh;
+    font-weight: 700;
+    line-height: 7.5vh;
+    text-align: center;
+}
+
+.orange-button{
+    color: var(--orange);
+    border-radius: 15px;
+    font-size: 2.3vh;
+    line-height: 2.5vh;
+    font-weight: 600;
+    border: 2px solid var(--orange);
+    padding: 1.38vh 1.875vw;
+    background-color: #fff;
+    height: 5.55vh;
+    transition: .3s;
+}
+
+.orange-button:hover{
+    background-color: var(--orange);
+    color: #fff;
+}

@@ -1,0 +1,90 @@
+.projects h2{
+    margin: 12.96vh 0 6.48vh;
+}
+
+.projects__container{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    width: 68.64vw;
+    height: 45.74vh;
+    gap: 10px;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.projects__el {
+    border: 3px solid var(--purple);
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    overflow: hidden;
+    position: relative;
+    transition: transform 1s, background-color .5s, box-shadow .5s;
+}
+
+.projects__el > img{
+    position: absolute;
+    object-fit: cover;
+    object-position: 0 .2px;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease-in;
+}
+
+.projects__el:hover > img {
+    opacity: 0;
+}
+
+.projects__hidden-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2.31vh;
+    color: white;
+    text-align: center;
+}
+
+.projects__hidden-elements > a{
+    width: 12.23vw;
+    height: 4.16vh;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    line-height: 2.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    position: relative;
+    opacity: 0;
+}
+
+.projects__hidden-elements > a:hover{
+    background-color: #fff;
+    color: var(--purple);
+}
+
+.projects__hidden-elements p{
+    max-width: 16.25vw;
+    line-height: 2.7vh;
+}
+
+.projects__el:hover {
+    background-color: var(--purple);
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px 2px #898383;
+}
+
+.projects__el:hover a{
+    opacity: 1;
+}
+
+.projects__btn{
+    display: block;
+    width: 17.3vw;
+    text-align: center;
+    margin: 9.25vh auto;
+}
