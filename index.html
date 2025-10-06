@@ -6,35 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylesheet" href="styles/general-styles.css">
     <link rel="stylesheet" href="styles/variables.css">
-    <link rel="stylesheet" href="styles/navbar&intro.css">
-    <link rel="stylesheet" href="styles/autor.css">
-    <link rel="stylesheet" href="styles/skills.css">
-    <link rel="stylesheet" href="styles/projects.css">
-    <link rel="stylesheet" href="styles/order.css">
-    <link rel="stylesheet" href="styles/rewies.css">
-    <link rel="stylesheet" href="styles/partnership&footer.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Khomchenkova Karina</title>
 </head>
 
-<body tabindex="0">
-    <header>
-        <nav class="navbar">
-            <div class="navbar__hamburgers">
-                <img class="navbar__hamburger" src="assets/icons/hamburger.svg" alt="three black lines">
-                <img class="navbar__hamburger" src="assets/icons/purple-hamburger.svg"
-                    alt="three purple lines">
+    <body>
+        <header>
+            <nav class="navbar">
                 <ul class="navbar__wrapper">
-                    <li><a href="#intro" class="navbar__item navbar__first">Главная</a></li>
-                    <li><a href="#autor" class="navbar__item navbar__second">Обо мне</a></li>
-                    <li><a href="#skills" class="navbar__item navbar__third">Навыки и стек</a></li>
-                    <li><a href="#projects" class="navbar__item navbar__fourth">Проекты</a></li>
-                    <li><a href="#footer" class="navbar__connection orange-button">Связаться со мной</a></li>
+                    <li><a href="#intro" class="navbar__item">Главная</a></li>
+                    <li><a href="#autor" class="navbar__item">Обо мне</a></li>
+                    <li><a href="#skills" class="navbar__item">Навыки и стек</a></li>
+                    <li><a href="#projects" class="navbar__item">Проекты</a></li>
+                    <a href="#footer" class="navbar__connection orange-button">
+                        Связаться со мной
+                    </a>
                 </ul>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
     <main>
         <section id="intro" class="intro">
@@ -43,205 +33,186 @@
             <img class="intro__image" src="assets/images/main.png" alt="desktop with a website inside">
         </section>
 
-        <section id="autor" class="autor">
-            <div class="autor__wrapper">
-                <h2 class="autor__title">ПРИВЕТ, Я ВЕБ-РАЗРАБОТЧИК</h2>
-                <p class="autor__desc">И я начинающий специалист, активно развивающийся в области фронтенд-разработки.
-                    В настоящее время углубленно изучаю современные технологии и применяю их на практике через создание
-                    пет-проектов. Создаю различные веб-приложения - от лендингов и портфолио до интерактивных
-                    инструментов,
-                    оттачивая навыки и формируя портфолио.</p>
-                <img class="autor__girl" src="assets/images/my_photo.jpg" alt="a beautiful girl">
-            </div>
-        </section>
+            <section id="autor" class="autor">
+                <div class="autor__wrapper">
+                    <h2 class="autor__title">ПРИВЕТ, Я ВЕБ-РАЗРАБОТЧИК</h2>
+                    <p class="autor__desc">И я начинающий специалист, активно развивающийся в области фронтенд-разработки.
+                        В настоящее время углубленно изучаю современные технологии и применяю их на практике через создание
+                        пет-проектов. Создаю различные веб-приложения - от лендингов и портфолио до интерактивных
+                        инструментов,
+                        оттачивая навыки и формируя портфолио.</p>
+                    <img class="autor__girl" src="assets/images/my_photo.jpg" alt="a beautiful girl">
+                </div>
+            </section>
 
-        <section id="skills" class="skills">
-            <h2 class="skills__title">НАВЫКИ И СТЕК ТЕХНОЛОГИЙ</h2>
-            <div class="skills__wrapper">
-                <div class="skills__first-block skills__block">
-                    <div class="skills__upper-part"></div>
-                    <img src="assets/icons/Development.svg" alt="an icon with signs">
-                    <h3>Разработка сайтов</h3>
-                    <p>Пишу чистый код на современном стеке фронтенд-технологий</p>
-                    <div class="skills__lower-part">
-                        <h4 class="skills__languages">Языки и фреймворки:</h4>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                        </ul>
-                        <h4 class="skills__tools">Инструменты:</h4>
-                        <ul>
-                            <li>VS Code</li>
-                            <li>Github</li>
-                            <li>Git</li>
-                        </ul>
+            <section id="skills" class="skills">
+                <h2 class="skills__title">НАВЫКИ И СТЕК ТЕХНОЛОГИЙ</h2>
+                <div class="skills__wrapper">
+                    <div class="skills__first-block skills__block">
+                        <div class="skills__upper-part"></div>
+                        <img src="assets/icons/Development.svg" alt="">
+                        <h3>Разработка сайтов</h3>
+                        <p>Пишу чистый код на современном стеке фронтенд-технологий</p>
+                        <div class="skills__lower-part">
+                            <h4 class="skills__languages">Языки и фреймворки:</h4>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                            </ul>
+                            <h4 class="skills__tools">Инструменты:</h4>
+                            <ul>
+                                <li>VS Code</li>
+                                <li>Github</li>
+                                <li>Git</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="skills__sec-block skills__block">
+                        <div class="skills_upper-part">
+                            <img src="assets/icons/Design.svg" alt="">
+                            <h3>Дизайн</h3>
+                            <p>Анализирую макеты, извлекаю метрики, понимаю UI/UX принципы.</p>
+                        </div>
+                        <div class="skills__lower-part">
+                            <h4>Инструменты:</h4>
+                            <ul>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="skills__third-block skills__block">
+                        <div class="skills__upper-part">
+                            <img src="assets/icons/SoftSkills.svg" alt="">
+                            <h3>Soft skills</h3>
+                            <p>Целеустремленный software-engineer с B1+ уровнем английского</p>
+                        </div>
+                        <div class="skills__lower-part">
+                            <h4>Навыки:</h4>
+                            <ul>
+                                <li>Работа в команде</li>
+                                <li>Любовь к своему делу</li>
+                                <li>Внимание к деталям</li>
+                                <li>Быстрая обучаемость</li>
+                                <li>Аналитическое мышление</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="skills__sec-block skills__block">
-                    <div class="skills_upper-part">
-                        <img src="assets/icons/Design.svg" alt="an icon with a brush and desktop">
-                        <h3>Дизайн</h3>
-                        <p>Анализирую макеты, извлекаю метрики, понимаю UI/UX принципы.</p>
-                    </div>
-                    <div class="skills__lower-part">
-                        <h4>Инструменты:</h4>
-                        <ul>
-                            <li>Figma</li>
-                        </ul>
+            <article id="projects" class="projects">
+                <h2>ПРОЕКТЫ</h2>
+                <div class="projects__container">
+                    <div class="projects__el"></div>
+                    <div class="projects__el"></div>
+                    <div class="projects__el"></div>
+                    <div class="projects__el"></div>
+                    <div class="projects__el"></div>
+                    <div class="projects__el"></div>
+                </div>
+                <a target="_blank" href="https://github.com/KhomchenkovaKarina" class="projects__btn orange-button"
+                    type="button">Посмотреть на Github</a>
+            </article>
+
+            <section id="order" class="order">
+                <header class="order__header">
+                    <h2>Хотите заказать сайт?</h2>
+                    <p>Напишите мне, чтобы обсудить детали</p>
+                </header>
+                <div class="order__main">
+                    <img class="order__left" src="assets/images/form.png" alt="a workplace from the top view">
+                    <form class="order__right">
+                        <div class="order__name-group">
+                            <label for="name" class="order__label">Имя</label>
+                            <input id="name" class="order__input order__input-name" type="text">
+                        </div>
+
+                        <div class="order__email-group">
+                            <label for="email" class="order__label">E-mail</label>
+                            <input id="email" class="order__input" type="email">
+                        </div>
+
+                        <div class="order__task-group">
+                            <label for="user's-task" class="order__label order__label-task">Расскажите про свою
+                                задачу</label>
+                            <textarea id="user's-task" name="user's-task" class="order__task"></textarea>
+                        </div>
+                        <button class="order__btn orange-button" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class="reviews__upper-part">
+                    <h2>ОТЗЫВЫ</h2>
+                    <h3>Люди, с которыми я работала,<br> остаются довольны результатом.</h3>
+                </div>
+                <div class="reviews__lower-part">
+                    <figure class="reviews__text">
+                        <blockquote class="reviews__main-text">"Текст отзыва"</blockquote>
+                        <figcaption class="name">Имя Фамилия</figcaption>
+                        <figcaption class="company">Компания, город</figcaption>
+                    </figure>
+                    <div class="reviews__arrows">
+                        <img src="assets/icons/Arrow-L.svg" alt="an orange arrow left">
+                        <img src="assets/icons/Arrow-R.svg" alt="an orange arrow right">
                     </div>
                 </div>
+            </section>
+        </main>
 
-                <div class="skills__third-block skills__block">
-                    <div class="skills__upper-part">
-                        <img src="assets/icons/SoftSkills.svg" alt="an icon with messages">
-                        <h3>Soft skills</h3>
-                        <p>Целеустремленный software-engineer с B1+ уровнем английского</p>
-                    </div>
-                    <div class="skills__lower-part">
-                        <h4>Навыки:</h4>
-                        <ul>
-                            <li>Работа в команде</li>
-                            <li>Любовь к своему делу</li>
-                            <li>Внимание к деталям</li>
-                            <li>Быстрая обучаемость</li>
-                            <li>Аналитическое мышление</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <aside class="partnership__container">
+            <p class="partnership__first-el">Договоримся <br> о сотрудничестве</p>
+            <p class="partnership__second-el">У вас есть идея проекта или предложение о работе? Напишите мне. Я
+                открыта к разным вариантам сотрудничества.</p>
+            <a href="#order" class="partnership__third-el" type="button">Связаться с разработчиком</a>
+        </aside>
 
-        <article id="projects" class="projects">
-            <h2>ПРОЕКТЫ</h2>
-            <div class="projects__container">
-                <div class="projects__el">
-                    <img src="assets/images/2.jpg" alt="a screen of site 'orange'">
-                    <div class="projects__hidden-elements">
-                        <p class="projects__hidden-element">Адаптивный сайт Orange с сантехникой: Flexbox + Grid,
-                            мобильная версия, современный дизайн.</p>
-                        <a class="projects__hidden-element " target="_blank" type="button"
-                            href="https://khomchenkovakarina.github.io/orange/">Посмотреть сайт</a>
-                    </div>
-                </div>
-                <div class="projects__el"></div>
-                <div class="projects__el"></div>
-                <div class="projects__el"></div>
-                <div class="projects__el"></div>
-                <div class="projects__el"></div>
-            </div>
-            <a target="_blank" href="https://github.com/KhomchenkovaKarina" class="projects__btn orange-button"
-                type="button">Посмотреть на Github</a>
-        </article>
-
-        <section id="order" class="order">
-            <header class="order__header">
-                <h2>Хотите заказать сайт?</h2>
-                <p>Напишите мне, чтобы обсудить детали</p>
-            </header>
-            <div class="order__main">
-                <img class="order__left" src="assets/images/form.png" alt="a workplace from the top view">
-                <form class="order__right">
-                    <div class="order__name-group">
-                        <label for="name" class="order__label">Имя</label>
-                        <input id="name" class="order__input order__input-name" type="text">
-                    </div>
-
-                    <div class="order__email-group">
-                        <label for="email" class="order__label">E-mail</label>
-                        <input id="email" class="order__input" type="email">
-                    </div>
-
-                    <div class="order__task-group">
-                        <label for="user's-task" class="order__label order__label-task">Расскажите про свою
-                            задачу</label>
-                        <textarea id="user's-task" name="user's-task" class="order__task"></textarea>
-                    </div>
-                    <button class="order__btn orange-button" type="submit">Отправить</button>
-                </form>
-            </div>
-        </section>
-
-        <section class="reviews">
-            <div class="reviews__upper-part">
-                <h2>ОТЗЫВЫ</h2>
-                <h3>Люди, с которыми я работала,<br> остаются довольны результатом.</h3>
-            </div>
-            <div class="reviews__lower-part">
-                <figure class="reviews__text">
-                    <blockquote class="reviews__main-text">"Текст отзыва"</blockquote>
-                    <figcaption class="name">Имя Фамилия</figcaption>
-                    <figcaption class="company">Компания, город</figcaption>
-                </figure>
-                <div class="reviews__arrows">
-                    <div class="reviews__arrows-visible">
-                        <img class="reviews__visible-img" src="assets/icons/Link-L-vis.svg"
-                            alt="an orange arrow pointing to left">
-                        <img class="reviews__visible-img" src="assets/icons/Link-R-vis.svg"
-                            alt="an orange arrow pointing to right">
-                    </div>
-                    <div class="reviews__arrows-hidden">
-                        <img class="reviews__hidden-img left" src="assets/icons/Link-L.svg"
-                            alt="an orange arrow pointing to left">
-                        <img class="reviews__hidden-img right" src="assets/icons/Link-R.svg"
-                            alt="an orange arrow pointing to right">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <aside class="partnership__container">
-        <p class="partnership__first-el">Договоримся <br> о сотрудничестве</p>
-        <p class="partnership__second-el">У вас есть идея проекта или предложение о работе? Напишите мне. Я
-            открыта к разным вариантам сотрудничества.</p>
-        <a href="#order" class="partnership__third-el" type="button">Связаться с разработчиком</a>
-    </aside>
-
-    <footer id="footer" class="footer">
-        <div class="footer__container">
-            <div class="footer__wrapper">
-                <a class="footer__img" target="_blank" href="https://t.me/weftuh">
-                    <img class="footer__el" src="assets/icons/TG.svg" alt="an icon of telegram">
-                    <img class="footer__el hover" src="assets/icons/TG-white.svg" alt="an icon of telegram">
-                </a>
+        <footer id="footer" class="footer">
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    <a class="footer__img" target="_blank" href="https://t.me/weftuh">
+                        <img class="footer__el" src="assets/icons/TG.svg" alt="an icon of telegram">
+                        <img class="footer__el hover" src="assets/icons/TG-white.svg" alt="an icon of telegram">
+                    </a>
 
                 <a class="footer__img" href="">
                     <img class="footer__el" src="assets/icons/Habr.svg" alt="an icon of habr">
                     <img class="footer__el hover" src="assets/icons/Habr-white.svg" alt="an icon of habr">
                 </a>
 
-                <a class="footer__img" href="mailto:homcenkovakarina@gmail.com">
-                    <img class="footer__el" src="assets/icons/Email.svg" alt="an icon of mail">
-                    <img class="footer__el hover" src="assets/icons/Email-white.svg" alt="an icon of mail">
-                </a>
-            </div>
+                    <a class="footer__img" href="mailto:homcenkovakarina@gmail.com">
+                        <img class="footer__el" src="assets/icons/Email.svg" alt="an icon of mail">
+                        <img class="footer__el hover" src="assets/icons/Email-white.svg" alt="an icon of mail">
+                    </a>
+                </div>
 
-            <div class="footer__from">
-                <h5>Изображения и иконки:</h5>
-                <a
-                    href="https://ru.freepik.com/free-vector/
+                <div class="footer__from">
+                    <h5>Изображения и иконки:</h5>
+                    <a
+                        href="https://ru.freepik.com/free-vector/
                     software-integration-conceptillustration_18352184.htm#page=2&query=вебразработка&position=7&from_view=search&track=sp h">
-                    Изображение-1 от Storyset на Freepik.</a>
-                <a href="https://ru.freepik.com/free-vector/
-                    code-typing-conceptillustration_10259340.htm#&position=12&from_vie w=author">Изображение-2 от
-                    Storyset
-                    на Freepik.</a>
-                <a href="https://www.flaticon.com/ru/free- icons/html" title="html иконки">Иконка "Html" от Frey Wazza
-                    на Flaticon.</a>
-                <a href="https://www.flaticon.com/ru/free- icons/" title="телеграмма иконки">Иконка «Телеграм» от
-                    Freepik на Flaticon.</a>
-                <a href="https://www.flaticon.com/ru/free- icons/" title="общение иконки">Иконка «Общение» от Ilham
-                    Fitrotul Hayat на Flaticon.</a>
-                <a href="https://www.flaticon.com/ru/free- icons/-" title="Дизайн сайта иконки">Иконка «Дизайн сайта» от
-                    Freepik на Flaticon.</a>
-                <a href="https://www.flaticon.com/ru/free- icons/-" title="Эл. адрес иконки">Иконка «Эл.адрес» от Those
-                    Icons на Flaticon.</a>
+                        Изображение-1 от Storyset на Freepik.</a>
+                    <a href="https://ru.freepik.com/free-vector/
+                    code-typing-conceptillustration_10259340.htm#&position=12&from_vie w=author">Изображение-2 от Storyset
+                        на Freepik.</a>
+                    <a href="https://www.flaticon.com/ru/free- icons/html" title="html иконки">Иконка "Html" от Frey Wazza
+                        на Flaticon.</a>
+                    <a href="https://www.flaticon.com/ru/free- icons/" title="телеграмма иконки">Иконка «Телеграм» от
+                        Freepik на Flaticon.</a>
+                    <a href="https://www.flaticon.com/ru/free- icons/" title="общение иконки">Иконка «Общение» от Ilham
+                        Fitrotul Hayat на Flaticon.</a>
+                    <a href="https://www.flaticon.com/ru/free- icons/-" title="Дизайн сайта иконки">Иконка «Дизайн сайта» от
+                        Freepik на Flaticon.</a>
+                    <a href="https://www.flaticon.com/ru/free- icons/-" title="Эл. адрес иконки">Иконка «Эл.адрес» от Those
+                        Icons на Flaticon.</a>
+                </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 
 </html>
