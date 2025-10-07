@@ -1,8 +1,6 @@
-
 html {
-    /* Задаем плавную прокрутку при нажатии на ссылку с id элемента.
-     * Без этой настройки будет происходить мгновенное перемещение к этому элементу. */
     scroll-behavior: smooth;
+    scroll-padding-top: 13vh;
 }
 
 .orange-button{
@@ -35,26 +33,213 @@ h1, h2 {
     text-align: center;
 }
 
+main{
+    margin-top: 19.07vh;
+}
+
 /* -------------------------------------NAVBAR---------------------------------------------- */
 .navbar {
     font-size: 2.3vh;
     line-height: 3.33vh;
     font-weight: 700;
+    height: 11.6vh;
+    position: fixed;
+    background-color: #fff;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 3px 10px 0 #e1e1e1;
 }
 
 .navbar__wrapper {
-    position: relative;
+    height: 100%;
+}
+
+/* .navbar__list{
     display: flex;
-    height: 16vh;
     justify-content: center;
     align-items: center;
     gap: 5.98vw;
+    height: 100%;
+    transform: translateX(13vw);
+} */
+
+.navbar__hamburger{
+    background: url('/assets/icons/hamburger.svg') 0 0/contain no-repeat;
+    height: 30px;
+    width: 50px;
 }
 
-.navbar__connection {
-    right: 7.5vw;
-    position: absolute;
+@media (min-width: 1475px){
+    .navbar__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.98vw;
+    height: 100%;
+    transform: translateX(13vw);
+    }
+
+    .navbar__connection {
+    margin-left: 4vw;
+    } 
+
+    .navbar__hamburger{
+        display: none;
+    }
+
+    .skills p{
+        max-width: 17.18vw;
+    }
 }
+
+@media (min-width: 901px){
+    .navbar__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.98vw;
+    height: 100%;
+    }
+
+    .navbar__hamburger{
+        display: none;
+    }
+
+    .intro__desc{
+    max-width: 50vw;
+    font-size: 3.33vh;
+    }
+
+    .autor__desc{
+        max-width: 46.97vw;
+    }
+
+    .autor__title{
+    margin-top: 6.94vh;
+    }
+
+    .autor__girl{
+    width: 21.09vw;
+    }
+
+    .skills img{
+    width: 4.68vw;
+    height: 6.66vh;
+    }
+
+    .skills__wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    }
+
+    .skills p{
+        max-width: 30vw;
+    }
+
+    .skills__tools{
+    margin-top: 4.07vh;
+    }
+
+    .skills__block{
+    padding: 6.48vh 3.125vw;
+    }
+}
+
+@media(max-width: 900px){
+    .navbar__item:not(:last-child){
+        display: none;
+    }
+
+    .navbar__list{
+    display: flex;
+    justify-content: end;
+    margin-right: 6.66vw;
+    }
+
+    .navbar__hamburger{
+        display: inline-block;
+        position: absolute;
+        top: 4.9vh;
+        left: 6.66vw;
+    }
+
+    .navbar__hamburger:hover{
+        background: url('/assets/icons/purple-hamburger.svg') 0 0/contain no-repeat;
+    }
+
+    .navbar__hamburger:hover + .navbar__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2.31vh;
+    background-color: #fff;
+    height: 23vh;
+    margin-top: 10vh;
+    width: 100%;
+    position: relative;
+    /* box-shadow: 0 3px 10px 0 #e1e1e1; */
+    }
+
+    .navbar__hamburger:hover + .navbar__list .navbar__item{
+        display: block;
+        margin-left: 6.5vw;
+    }
+
+    .navbar__hamburger:hover + .navbar__list .navbar__item .navbar__connection{
+        position: absolute;
+        right: 6.6vw;
+        top: -6vh;
+    }
+
+    .intro__desc{
+        max-width: 75vw;
+        font-size: 3vh;
+    }
+
+    .intro__image{
+        object-fit: cover;
+        width: 90vw;
+        height: 45vh;
+    }
+
+    .autor__desc{
+        max-width: 80vw;
+        text-align: justify;
+    }
+
+    .autor__title{
+    margin-top: 3.94vh;
+    }
+
+    .skills img{
+    width: 15vw;
+    height: 5.7vh;
+    }
+
+    .skills__wrapper {
+    flex-wrap: wrap;
+    }
+
+    .skills p{
+        width: 30vw;
+    }
+
+    .skills__block{
+    padding: 2.5vh 3.125vw;
+    }
+}
+
+@media(max-width: 600px){
+    .intro__image{
+        object-fit: cover;
+        width: 100vw;
+        height: 30vh;
+    }
+}
+
 
 /* --------------------------------------INTRO---------------------------------------------- */
 
@@ -68,10 +253,8 @@ h1, h2 {
 
 .intro__desc {
     margin: 4.4vh 0 6.2vh;
-    font-size: 3.33vh;
     font-weight: 400;
     color: #3d3d3d;
-    max-width: 50vw;
     line-height: 5vh;
     text-align: center;
 }
@@ -92,14 +275,12 @@ h1, h2 {
 }
 
 .autor__title {
-    margin-top: 6.94vh;
     line-height: 7.5vh;
 }
 
 .autor__desc {
     margin: 3.7vh 0 5.55vh;
     font-size: 2vh;
-    max-width: 46.97vw;
     line-height: 1.5;
     overflow: wrap;
 }
@@ -107,7 +288,6 @@ h1, h2 {
 .autor__girl {
     border: 3px solid var(--teal);
     border-radius: 12px;
-    width: 21.09vw;
     height: 50vh;
     object-fit: cover;
 }
@@ -125,11 +305,6 @@ h1, h2 {
     justify-content: center;
 }
 
-.skills img{
-    width: 4.68vw;
-    height: 6.66vh;
-}
-
 .skills__wrapper > div{
     border: 1px solid var(--teal);
 }
@@ -142,18 +317,12 @@ h1, h2 {
     font-size: 2.7vh;
     line-height: 4.16vh;
     margin-top: 2.7vh;
-    max-width: 17.18vw;
 }
 
 .skills__block {
     text-align: center;
     font-size: 2.7vh;
     line-height: 4.16vh;
-    padding: 6.48vh 3.125vw;
-}
-
-.skills__tools{
-    margin-top: 4.07vh;
 }
 
 .skills h3{
@@ -201,6 +370,68 @@ h1, h2 {
     width: 100%;
     height: 100%;
     align-self: center;
+    overflow: hidden;
+    position: relative;
+    transition: transform 1s, background-color .5s, box-shadow .5s;
+}
+
+.projects__el > img{
+    position: absolute;
+    object-fit: cover;
+    object-position: 0 .2px;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease-in;
+}
+
+.projects__el:hover > img {
+    opacity: 0;
+}
+
+.projects__hidden-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2.31vh;
+    color: white;
+    text-align: center;
+}
+
+.projects__hidden-elements > a{
+    width: 12.23vw;
+    height: 4.16vh;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    line-height: 2.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    position: relative;
+    opacity: 0;
+}
+
+.projects__hidden-elements > a:hover{
+    background-color: #fff;
+    color: var(--purple);
+}
+
+.projects__hidden-elements p{
+    max-width: 16.25vw;
+    line-height: 2.7vh;
+}
+
+.projects__el:hover {
+    background-color: var(--purple);
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px 2px #898383;
+}
+
+.projects__el:hover a{
+    opacity: 1;
 }
 
 .projects__btn{
