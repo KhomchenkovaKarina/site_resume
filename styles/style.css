@@ -78,7 +78,7 @@ main {
     }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 1080px) {
     .navbar__list {
         display: flex;
         justify-content: center;
@@ -217,7 +217,7 @@ main {
     }
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1080px) {
     .navbar__hamburger:hover {
         background: url('../assets/icons/purple-hamburger.svg') 0 0/contain no-repeat;
     }
@@ -242,8 +242,8 @@ main {
     /* Стили для иконки бургера (label) */
     .burger-icon {
         display: inline-block;
-        width: 30px;
-        height: 20px;
+        width: 60px;
+        height: 60px;
         position: absolute;
         top: 4.9vh;
         left: 6.66vw;
@@ -297,7 +297,7 @@ main {
 
     .navbar__connection{
         position: relative;
-        right: -49vw;
+        right: -50vw;
         top: 0;
     }
 
@@ -328,8 +328,8 @@ main {
 
     .intro__image {
         object-fit: cover;
-        width: 90vw;
-        height: 45vh;
+        width: 100vw;
+        height: 60vh;
     }
 
     .autor__desc {
@@ -487,22 +487,29 @@ main {
 
 }
 
-@media(max-width: 600px) {
+@media(max-width: 850px) {
     .intro__image {
         object-fit: cover;
-        width: 100vw;
-        height: 30vh;
+        width: 90vw;
+        height: 43vh;
     }
 
     .partnership__container {
         min-height: 25vh;
     }
+
 }
 
-@media (max-width: 382px) {
+@media (max-width:550px) {
     .projects__btn {
         height: 6vh;
         width: 80vw;
+    }
+
+    .intro__image {
+        object-fit: cover;
+        width: 95vw;
+        height: 30vh;
     }
 }
 
@@ -811,7 +818,6 @@ main {
     gap: 10px;
     justify-self: center;
     display: flex;
-    gap: 10px;
 }
 
 .reviews__left-arrow {
