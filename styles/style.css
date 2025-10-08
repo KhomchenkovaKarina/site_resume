@@ -55,21 +55,6 @@ main {
     height: 100%;
 }
 
-/* .navbar__list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5.98vw;
-    height: 100%;
-    transform: translateX(13vw);
-} */
-
-.navbar__hamburger {
-    background: url('/assets/icons/hamburger.svg') 0 0/contain no-repeat;
-    height: 30px;
-    width: 50px;
-}
-
 @media (min-width: 1475px) {
     .navbar__list {
         display: flex;
@@ -234,7 +219,7 @@ main {
 
 @media(max-width: 900px) {
     .navbar__hamburger:hover {
-        background: url('/assets/icons/purple-hamburger.svg') 0 0/contain no-repeat;
+        background: url('../assets/icons/purple-hamburger.svg') 0 0/contain no-repeat;
     }
 
     .navbar__wrapper {
@@ -245,12 +230,11 @@ main {
         position: relative;
     }
 
-    /* Скрываем чекбокс */
     .navbar__hamburger {
         display: none;
     }
 
-    .navbar__connection:hover{
+    .navbar__connection:hover {
         background-color: var(--orange);
         color: #fff !important;
     }
@@ -263,18 +247,18 @@ main {
         position: absolute;
         top: 4.9vh;
         left: 6.66vw;
-        background: url('/assets/icons/hamburger.svg') 0 0/contain no-repeat;
+        background: url('../assets/icons/hamburger.svg') 0 0/contain no-repeat;
         z-index: 20;
         transition: .3s;
     }
 
     /* Анимация иконки при checked */
     .navbar__hamburger:checked+.burger-icon {
-        background: url('/assets/icons/purple-hamburger.svg') 0 0/contain no-repeat;
+        background: url('../assets/icons/purple-hamburger.svg') 0 0/contain no-repeat;
     }
 
     /* Стили для меню */
-    .navbar__list {
+    .navbar__list > .navbar__item:not(:last-child) {
         display: none;
         /* Скрываем меню по умолчанию */
         justify-content: end;
@@ -283,7 +267,7 @@ main {
         transition: .4s;
     }
 
-    /* Показываем меню при checked (вместо hover) */
+    /* Показываем меню при checked */
     .navbar__hamburger:checked~.navbar__list {
         display: flex;
         flex-direction: column;
@@ -296,7 +280,6 @@ main {
         width: 100vw;
         position: relative;
         transition: .4s;
-
     }
 
     /* Показываем все пункты при checked */
@@ -310,6 +293,12 @@ main {
         position: absolute;
         right: 3vw;
         top: -6vh;
+    }
+
+    .navbar__connection{
+        position: relative;
+        right: -49vw;
+        top: 0;
     }
 
     /* Скрываем все пункты кроме последнего по умолчанию (если нужно) */
