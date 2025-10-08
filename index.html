@@ -15,7 +15,8 @@
     <header>
         <nav class="navbar">
             <div class="navbar__wrapper">
-                <div class="navbar__hamburger"></div>
+                <input class="navbar__hamburger" type="checkbox" id="burger-toggle">
+                <label for="burger-toggle" class="burger-icon"></label>
                 <ul class="navbar__list">
                     <li class="navbar__item"><a href="#intro">Главная</a></li>
                     <li class="navbar__item"><a href="#autor">Обо мне</a></li>
@@ -167,8 +168,8 @@
                     <figcaption class="company">Компания, город</figcaption>
                 </figure>
                 <div class="reviews__arrows">
-                    <img src="assets/icons/Link-L-vis.svg" alt="an orange arrow left">
-                    <img src="assets/icons/Link-R-vis.svg" alt="an orange arrow right">
+                    <div class="reviews__left-arrow"></div>
+                    <div class="reviews__right-arrow"></div>
                 </div>
             </div>
         </section>
