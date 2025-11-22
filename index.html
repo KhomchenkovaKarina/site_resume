@@ -57,12 +57,12 @@
                     <h3>Разработка сайтов</h3>
                     <p>Пишу чистый код на современном стеке фронтенд-технологий</p>
                     <div class="skills__lower-part">
-                        <h4 class="skills__languages">Языки и фреймворки:</h4>
+                        <h4 class="skills__languages">Стек технологий:</h4>
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
+                            <li>SCSS</li>
                             <li>JavaScript</li>
-                            <li>React</li>
                         </ul>
                         <h4 class="skills__tools">Инструменты:</h4>
                         <ul>
@@ -90,13 +90,13 @@
                 <div class="skills__third-block skills__block">
                     <div class="skills__upper-part">
                         <img src="assets/icons/SoftSkills.svg" alt="">
-                        <h3>Soft skills</h3>
-                        <p>Целеустремленный software-engineer с B1+ уровнем английского</p>
+                        <h3>General skills</h3>
+                        <p>Немного обо мне</p>
                     </div>
                     <div class="skills__lower-part">
                         <h4>Навыки:</h4>
                         <ul>
-                            <li>Работа в команде</li>
+                            <li>Уровень английского B2</li>
                             <li>Любовь к своему делу</li>
                             <li>Внимание к деталям</li>
                             <li>Быстрая обучаемость</li>
@@ -138,19 +138,19 @@
                 <img class="order__left" src="assets/images/form.png" alt="a workplace from the top view">
                 <form class="order__right">
                     <div class="order__name-group">
-                        <label for="name" class="order__label">Имя</label>
-                        <input id="name" class="order__input order__input-name" type="text">
+                        <label for="nameField" class="order__label">Имя</label>
+                        <input id="nameField" autocomplete="given-name" name="name" class="order__input order__input-name" type="text">
                     </div>
 
                     <div class="order__email-group">
-                        <label for="email" class="order__label">E-mail</label>
-                        <input id="email" class="order__input" type="email">
+                        <label for="emailField" class="order__label">E-mail</label>
+                        <input id="emailField" autocomplete="email" name="email" class="order__input" type="email">
                     </div>
 
                     <div class="order__task-group">
-                        <label for="user's-task" class="order__label order__label-task">Расскажите про свою
+                        <label for="taskField" class="order__label order__label-task">Расскажите про свою
                             задачу</label>
-                        <textarea id="user's-task" name="user's-task" class="order__task"></textarea>
+                        <textarea id="taskField" name="user-task" class="order__task"></textarea>
                     </div>
                     <button class="order__btn orange-button" type="submit">Отправить</button>
                 </form>
@@ -163,10 +163,11 @@
                 <h3>Люди, с которыми я работала,<br> остаются довольны результатом.</h3>
             </div>
             <div class="reviews__lower-part">
+                <img src="" alt="фото клиента">
                 <figure class="reviews__text">
-                    <blockquote class="reviews__main-text">"Текст отзыва"</blockquote>
-                    <figcaption class="name">Имя Фамилия</figcaption>
-                    <figcaption class="company">Компания, город</figcaption>
+                    <blockquote class="reviews__main-text">"Работал с Кариной над созданием лендинга для нашего бизнеса. Проект выполнен качественно и вовремя. Спасибо за профессионализм и внимательность к деталям!"</blockquote>
+                    <figcaption class="name">Алексей Смирнов</figcaption>
+                    <figcaption class="company">Москва, ООО "КодМастер"</figcaption>
                 </figure>
                 <div class="reviews__arrows">
                     <div class="reviews__left-arrow"></div>
@@ -225,6 +226,7 @@
             </div>
         </div>
     </footer>
+    <script src="code.js"></script>
 </body>
 
 </html>
