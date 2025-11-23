@@ -4,6 +4,36 @@ let emailField = document.getElementById('emailField'),
     nameField = document.getElementById('nameField'),
     taskField = document.getElementById('taskField');
 
+const images = document.querySelectorAll('.reviews__review');
+const controls = document.querySelectorAll('.controls');
+let imageIndex = 0;
+
+function show(index) {
+    images[imageIndex].classList.remove('active');
+    images[index].classList.add('active');
+    imageIndex = index
+}
+
+controls.forEach((e) => {
+    e.addEventListener('click', (event) => {
+        if (event.target.classList.contains('prev')) {
+            let index = imageIndex - 1;
+            if (index < 0) {
+                index = images.length - 1;
+            }
+            show(index);
+        } else if (event.target.classList.contains('next')) {
+            let index = imageIndex + 1;
+            if (index >= images.length) {
+                index = 0;
+            }
+            show(index);
+        }
+    })
+})
+
+show(imageIndex);
+
 function createErrorSpan() { //создание надписи об ошибке
     let errorField = document.createElement('span');
     errorField.classList.add('error');
