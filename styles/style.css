@@ -33,8 +33,15 @@ html {
     transition: .3s;
 }
 
+input[type="text"],
+textarea {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Tilda Sans", sans-serif;
+    touch-action: manipulation;
 }
 
 h1, h2 {
@@ -185,10 +192,6 @@ main {
 
     .order__right {
         width: 48.3vw;
-    }
-
-    .order__right input, textarea {
-        font-size: 2.5vh;
     }
 
     .reviews {
@@ -399,7 +402,7 @@ main {
     }
 
     .order {
-        height: 135vh;
+        height: auto;
     }
 
     .order h2 {
@@ -505,6 +508,10 @@ main {
     .projects__btn {
         height: 6vh;
         width: 80vw;
+    }
+
+    .reviews__main-text {
+        width: 70%;
     }
 
     .intro__image {
@@ -739,6 +746,7 @@ main {
 .order__right input, textarea {
     border-radius: 12px;
     padding: 12px 15px;
+    font-size: 1.5rem;
 }
 
 .order__name-group {
