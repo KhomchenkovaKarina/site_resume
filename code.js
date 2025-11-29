@@ -44,7 +44,7 @@ function createErrorSpan() { //создание надписи об ошибке
 function addErrorSpan(event, field) { //добавление ошибки (рамка + span)
     event.preventDefault();
     field.classList.add('red-frame');
-    if (!field.parentElement.querySelector('.error') ) { //проверка нужен ли span
+    if (!field.parentElement.querySelector('.error')) { //проверка нужен ли span
         field.parentNode.insertBefore(createErrorSpan(), field.nextSibling);
     }
     return `${field} error`;
@@ -55,7 +55,7 @@ function removeErrorSpan(field) {
     field.parentElement.querySelector('.error').remove();
 }
 
-document.getElementsByClassName('order__right')[0].addEventListener('submit', function(event) {
+document.getElementsByClassName('order__right')[0].addEventListener('submit', function (event) {
     let errors = [];
     if (nameField.value.trim().length === 0) errors.push(addErrorSpan(event, nameField)); //trim() убирает пробелы в начале и в конце
     if (emailField.value.trim().length === 0) errors.push(addErrorSpan(event, emailField));
@@ -64,9 +64,19 @@ document.getElementsByClassName('order__right')[0].addEventListener('submit', fu
 })
 
 for (let field of [nameField, emailField, taskField]) { //создаем обработчик событий под каждое поле
-    field.addEventListener('click', function() {
+    field.addEventListener('click', function () {
         if (field.classList.contains('red-frame')) {
             removeErrorSpan(field);
         }
     })
 }
+
+document.getElementById('my-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const notification = document.getElementById('notification');
+    notification.classList.add('show');
+    setTimeout(() => {
+        notification.classList.remove('show');
+    }, 5000);
+    this.reset();
+});
