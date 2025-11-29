@@ -23,7 +23,8 @@
                     <li class="navbar__item"><a href="#autor">Обо мне</a></li>
                     <li class="navbar__item"><a href="#skills">Навыки и стек</a></li>
                     <li class="navbar__item"><a href="#projects">Проекты</a></li>
-                    <li class="navbar__item"><a href="#footer" class="navbar__connection orange-button">Связаться со мной</a></li>   
+                    <li class="navbar__item"><a href="#footer" class="navbar__connection orange-button">Связаться со
+                            мной</a></li>
                 </ul>
             </div>
         </nav>
@@ -136,10 +137,11 @@
             </header>
             <div class="order__main">
                 <img class="order__left" src="assets/images/form.png" alt="a workplace from the top view">
-                <form class="order__right">
+                <form id="my-form" class="order__right">
                     <div class="order__name-group">
                         <label for="nameField" class="order__label">Имя</label>
-                        <input id="nameField" autocomplete="given-name" name="name" class="order__input order__input-name" type="text">
+                        <input id="nameField" autocomplete="given-name" name="name"
+                            class="order__input order__input-name" type="text">
                     </div>
 
                     <div class="order__email-group">
@@ -155,6 +157,9 @@
                     <button class="order__btn orange-button" type="submit">Отправить</button>
                 </form>
             </div>
+            <div id="notification" class="notification">
+                ✅ Заявка успешно оформлена!
+            </div>
         </section>
 
         <section class="reviews">
@@ -167,7 +172,8 @@
                 <div class="reviews__review">
                     <img src="assets/images/cl-1.jpg" class="active" alt="фото лилий">
                     <figure class="reviews__text">
-                        <blockquote class="reviews__main-text">"Работал с Кариной над созданием лендинга для нашего бизнеса. Проект выполнен качественно и вовремя. 
+                        <blockquote class="reviews__main-text">"Работал с Кариной над созданием лендинга для нашего
+                            бизнеса. Проект выполнен качественно и вовремя.
                             Спасибо за профессионализм и внимательность к деталям!"</blockquote>
                         <figcaption class="name">Алексей Смирнов</figcaption>
                         <figcaption class="company">Москва, ООО "КодМастер"</figcaption>
@@ -177,16 +183,17 @@
                 <div class="reviews__review">
                     <img src="assets/images/cl-2.jpg" alt="фото эйфелевой башни">
                     <figure class="reviews__text">
-                        <blockquote class="reviews__main-text">"Карина помогла нам запустить корпоративный портал с нуля. Приятно удивила компетентность и быстрое 
+                        <blockquote class="reviews__main-text">"Карина помогла нам запустить корпоративный портал с
+                            нуля. Приятно удивила компетентность и быстрое
                             реагирование на наши пожелания. Будем рады сотрудничать снова!"</blockquote>
                         <figcaption class="name">Ирина Сергеевна</figcaption>
                         <figcaption class="company">Санкт-Петербург, ЗАО «Цифровая волна»</figcaption>
                     </figure>
                 </div>
-                <div class="reviews__arrows">
-                    <div class="reviews__left-arrow prev controls"></div>
-                    <div class="reviews__right-arrow next controls"></div>
-                </div>
+            </div>
+            <div class="reviews__arrows">
+                <div class="reviews__left-arrow prev controls"></div>
+                <div class="reviews__right-arrow next controls"></div>
             </div>
         </section>
     </main>
